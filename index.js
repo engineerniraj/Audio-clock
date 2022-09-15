@@ -55,8 +55,8 @@ let Clock = () =>{
         hrs = hrs - 12;
         period = "PM";
     }
-    hrs = hrs<10 ? "0" + hrs : hrs;
-    mins = mins<10 ? "0" + mins : mins;
+    hrs = hrs<10 ? "zero" + hrs : hrs;
+    mins = mins<10 ? "zero" + mins : mins;
 
      msg.text= hrs ;
      window.speechSynthesis.speak(msg);
